@@ -6,11 +6,11 @@
 .screen {
     display: none;
     /* 画面いっぱいに表示 */
-    position: absolute;
-    top: -10rem;
+    /* position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 .screen.active {
     display: block;
