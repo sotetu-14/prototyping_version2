@@ -101,7 +101,7 @@ button:hover {
     display: inline-block;
     text-align: center;
     font-size: 4rem;
-    width: 80rem;
+    width: 70%;
     background-color: white;
     border-radius: 0.9375rem;
     border: 0.3125rem solid #2b3467;
@@ -123,6 +123,7 @@ button:hover {
     color: #eb455f;
     border-radius: 3.125rem;
     font-weight: bold;
+    width: 60%;
 }
 #button2 {
     margin: 0 0 0 0;
