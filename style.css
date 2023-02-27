@@ -1,6 +1,6 @@
 /* 全体に適応させる部分 */
 html {
-    /* overflow: hidden; */
+    overflow: hidden;
     background-color: #fcffe7;
 }
 .screen {
