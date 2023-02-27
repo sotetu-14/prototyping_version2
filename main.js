@@ -146,7 +146,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 端末によって大きさを調節する(6)
+// 端末の画面のサイズにフォントサイズを合わせる(6)
+document.addEventListener('DOMContentLoaded', function() {
+    // 画面幅を取得
+    const screenWidth = window.innerWidth;
+
+    // フォントサイズを計算
+    const fontSize = screenWidth * 0.008; // 例えば、画面幅の2%をフォントサイズに設定する場合
+
+    // CSSのスタイルシートに適用
+    document.body.style.fontSize = fontSize + 'px';
+});
+
+
+// ウィンドウサイズの収縮に対応(7)
 function adjustFontSize() {
     // ビューポートの幅を取得する
     const width = window.innerWidth;
