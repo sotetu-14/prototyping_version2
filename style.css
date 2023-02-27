@@ -1,4 +1,7 @@
 /* 全体に適応させる部分 */
+html {
+    font-size: 16px;
+  }
 html body{
     /* overflow: hidden; */
     height: 100%;
@@ -23,19 +26,19 @@ button {
     background-color: white;
     color: #2b3467;
     font-size: 3rem;
-    padding: 8px 16px;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    margin: 55px;
-    border: 5px solid #2b3467;
+    margin: 3.4375rem;
+    border: 0.35rem solid #2b3467;
     font-weight: bold;
     transition: 0.25s;
 }
 button:hover {
     background-color: white;
     transition: 0.25s;
-    border: 5px solid #eb455f;
+    border: 0.35rem solid #eb455f;
     color: #eb455f;
 }
 
@@ -49,17 +52,17 @@ button:hover {
     /* height: 3000px; */
 }
 .main_1 {
-    padding: 200px 0 0 0;
+    padding: 12.5rem 0 0 0;
     /* margin: 100px 0 0 0; */
 }
 /* タイピングソフト(仮) */
 .title_entire{ 
     background-color: #ffffff;
     width: 35%;
-    height: 150px;
-    margin: 50px auto 0 auto;
-    border-radius: 20px;
-    border: 7px solid #2b3467;
+    height: 9.375rem;
+    margin: 3.125rem auto 0 auto;
+    border-radius: 1.25rem;
+    border: 0.4375rem solid #2b3467;
     display: flex;
 }
 
@@ -72,7 +75,7 @@ button:hover {
 }
 /* ボタン1 */
 #button1 {
-    margin: 150px;
+    margin: 9.375rem;
 }
 
 
@@ -85,7 +88,7 @@ button:hover {
 /* 文字を表示させる部分 */
 .display_parent {
     text-align: center;
-    margin: 200px 0 0 0;
+    margin: 12.5rem 0 0 0;
 }
 
 #display {
@@ -94,9 +97,9 @@ button:hover {
     font-size: 4rem;
     width: 60%;
     background-color: white;
-    border-radius: 15px;
-    border: 5px solid #2b3467;
-    padding: 3px 0;
+    border-radius: 0.9375rem;
+    border: 0.3125rem solid #2b3467;
+    padding: 0.1875rem 0;
     color: #2b3467;
 }
 /* 文字入力欄 */
@@ -106,32 +109,32 @@ button:hover {
 #input_room {
     display: inline-block;
     background-color: white;
-    padding: 10px 80px;
-    margin: 100px 0 0 0;
+    padding: 0.625rem 5rem;
+    margin: 6.25rem 0 0 0;
     font-size: 4rem;
     text-align: center;
-    border: 6px solid #eb455f;
+    border: 0.375rem solid #eb455f;
     color: #eb455f;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-weight: bold;
 }
 #button2 {
-    margin: 0px 0 0 0;
+    margin: 0 0 0 0;
 }
 /* 警告文の表示 */
 .warn_parent {
     text-align: center;
 }
 .warn {
-    margin: 10px 0px 100px 0px;
+    margin: 0.625rem 0 6.25rem 0;
     font-size: 1.5rem;
     text-decoration: underline;
 }
 /* スクリーン2の背景について */
 #screen2_back {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0.625rem;
+    left: 0.625rem;
     font-size: 4rem;
     color: #eb455f;
     z-index: -1;
@@ -146,7 +149,7 @@ button:hover {
     background-color: #fcffe7;
 }
 #button3 {
-    margin: 300px 0 0 0;
+    margin: 18.75rem 0 0 0;
 }
 #apologize_parent {
     text-align: center;
