@@ -1,8 +1,7 @@
-/* 全体に適応させる部分 */
+/* 全体に適応させる部分
 html body{
-    /* overflow: hidden; */
     height: 100%;
-}
+} */
 .screen {
     display: none;
     /* 画面いっぱいに表示 */
