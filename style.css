@@ -1,0 +1,157 @@
+/* 全体に適応させる部分 */
+html body{
+    /* overflow: hidden; */
+    height: 100%;
+}
+.screen {
+    display: none;
+    /* 画面いっぱいに表示 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.screen.active {
+    display: block;
+}
+.button_pearent {
+    text-align: center;
+}
+button {
+    display: inline-block;
+    background-color: white;
+    color: #2b3467;
+    font-size: 3rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 55px;
+    border: 5px solid #2b3467;
+    font-weight: bold;
+    transition: 0.25s;
+}
+button:hover {
+    background-color: white;
+    transition: 0.25s;
+    border: 5px solid #eb455f;
+    color: #eb455f;
+}
+
+
+
+
+/* スクリーン1 */
+#screen1 {
+    overflow: hidden;
+    background-color: #fcffe7;
+    /* height: 3000px; */
+}
+.main_1 {
+    padding: 200px 0 0 0;
+    /* margin: 100px 0 0 0; */
+}
+/* タイピングソフト(仮) */
+.title_entire{ 
+    background-color: #ffffff;
+    width: 35%;
+    height: 150px;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    border: 7px solid #2b3467;
+    display: flex;
+}
+
+.title_text {
+    display: block;
+    margin: auto;
+    color: #2b3467;
+    font-weight: 900;
+    font-size: 3.7rem;
+}
+/* ボタン1 */
+#button1 {
+    margin: 150px;
+}
+
+
+
+/* スクリーン2 */
+#screen2 {
+    background-color: #fcffe7;
+}
+
+/* 文字を表示させる部分 */
+.display_parent {
+    text-align: center;
+    margin: 200px 0 0 0;
+}
+
+#display {
+    display: inline-block;
+    text-align: center;
+    font-size: 4rem;
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid #2b3467;
+    padding: 3px 0;
+    color: #2b3467;
+}
+/* 文字入力欄 */
+.input_parent {
+    text-align: center;
+}
+#input_room {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 80px;
+    margin: 100px 0 0 0;
+    font-size: 4rem;
+    text-align: center;
+    border: 6px solid #eb455f;
+    color: #eb455f;
+    border-radius: 50px;
+    font-weight: bold;
+}
+#button2 {
+    margin: 0px 0 0 0;
+}
+/* 警告文の表示 */
+.warn_parent {
+    text-align: center;
+}
+.warn {
+    margin: 10px 0px 100px 0px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+/* スクリーン2の背景について */
+#screen2_back {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 4rem;
+    color: #eb455f;
+    z-index: -1;
+}
+.main_2 {
+    position: relative; /* 相対位置指定 */
+    z-index: 1; /* 前面に表示 */
+}
+
+/* スクリーン3 */
+#screen3 {
+    background-color: #fcffe7;
+}
+#button3 {
+    margin: 300px 0 0 0;
+}
+#apologize_parent {
+    text-align: center;
+}
+#apologize {
+    color: #eb455f;
+    font-size: 4rem;
+}
