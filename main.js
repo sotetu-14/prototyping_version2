@@ -2,7 +2,7 @@
 
 // 表示される文字の倉庫
 const sentence = [
-    "新品スーツを買って入社式に備える",
+    "新しいスーツを買って入社式に備える",
     "隣の客はよく柿食う客だ",
     "隣の竹垣に竹立て掛けた",
     "今日歯医者に行く",
@@ -20,7 +20,7 @@ const sentence = [
     "言われたとおりにやったのに",
     "どこかでお会いしませんでしたか？",
     "残念なお知らせがあります",
-    "使い捨てコンタクトレンズを使い回す",
+    "使い捨てコンタクトレンズを使いまわす",
     "私が大食いチャンピオンです",
     "生まれ変わったら鳥になりたい",
     "地球は青かった",
@@ -45,7 +45,7 @@ const sentence = [
     "バカと天才は紙一重",
     "良い香りのする花が好きです",
     "私たちは山に登りました",
-    "私はアクション映画が好きです"
+    "私はアクション映画を見るのが好きです"
 ];
 
 // ディスプレイに書き込む(関数)
@@ -104,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function() {
     nowScreen.classList.remove('active');
     const nextScreen = document.getElementById(screen_count);
     nextScreen.classList.add('active');
-    };    
+    };
+
 });
 
 // 関数を使って文字を書き込む(2)
@@ -142,5 +143,36 @@ document.addEventListener('DOMContentLoaded', function() {
             const screen2_back = document.getElementById('screen2_back');
             screen2_back.textContent = "";
         }
-    })
-})
+    });
+});
+
+// 端末によって大きさを調節する(6)
+function adjustFontSize() {
+    // ビューポートの幅を取得する
+    const width = window.innerWidth;
+    
+    // ベースフォントサイズを設定する
+    const baseFontSize = 16;
+    
+    // 幅が 960px より大きい場合
+    if (width > 960) {
+      document.documentElement.style.fontSize = baseFontSize + "px";
+    }
+    // 幅が 480px より大きく 960px 以下の場合
+    else if (width > 480) {
+      const fontSize = baseFontSize * 0.8;
+      document.documentElement.style.fontSize = fontSize + "px";
+    }
+    // 幅が 480px 以下の場合
+    else {
+      const fontSize = baseFontSize * 0.6;
+      document.documentElement.style.fontSize = fontSize + "px";
+    }
+  }
+  
+  // ウィンドウのリサイズ時に関数を実行する
+  window.onresize = adjustFontSize;
+  
+  // ページロード時に関数を実行する
+  window.onload = adjustFontSize;
+  
