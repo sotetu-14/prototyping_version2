@@ -53,7 +53,7 @@ button:hover {
     /* margin: 100px 0 0 0; */
 }
 /* タイピングソフト(仮) */
-.title_entire{ 
+/* .title_entire{ 
     background-color: #ffffff;
     width: 35%;
     height: 9.375rem;
@@ -61,14 +61,20 @@ button:hover {
     border-radius: 1.25rem;
     border: 0.4375rem solid #2b3467;
     display: flex;
+} */
+.title_entire {
+    text-align: center;
 }
-
 .title_text {
-    display: block;
+    display: inline-block;
     margin: auto;
     color: #2b3467;
     font-weight: 900;
     font-size: 3.7rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 1.25rem;
+    border: 0.4375rem solid #2b3467;
 }
 /* ボタン1 */
 #button1 {
