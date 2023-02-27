@@ -176,11 +176,6 @@ function adjustFontSize() {
       const fontSize = baseFontSize * 0.8;
       document.documentElement.style.fontSize = fontSize + "px";
     }
-    // 幅が 480px 以下の場合
-    else {
-      const fontSize = baseFontSize * 0.6;
-      document.documentElement.style.fontSize = fontSize + "px";
-    }
   }
   
   // ウィンドウのリサイズ時に関数を実行する
