@@ -1,7 +1,7 @@
-/* 全体に適応させる部分
-html body{
-    height: 100%;
-} */
+/* 全体に適応させる部分 */
+html {
+    overflow: hidden;
+}
 .screen {
     display: none;
     /* 画面いっぱいに表示 */
@@ -43,7 +43,7 @@ button:hover {
 
 /* スクリーン1 */
 #screen1 {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #fcffe7;
     /* height: 3000px; */
 }
@@ -90,14 +90,14 @@ button:hover {
 /* 文字を表示させる部分 */
 .display_parent {
     text-align: center;
-    margin: 12.5rem 0 0 0;
+    margin: 8% 0 0 0;
 }
 
 #display {
     display: inline-block;
     text-align: center;
     font-size: 4rem;
-    width: 60%;
+    width: 80rem;
     background-color: white;
     border-radius: 0.9375rem;
     border: 0.3125rem solid #2b3467;
