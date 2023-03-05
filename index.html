@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>タイピング</title>
+<meta name="description" content=""/>
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="main.js"></script>
+</head>
+<body>
+    <div id="screen1" class="screen active">
+        <div class="main_1">
+            <div class="title_entire">
+                <p class="title_text">タイピングソフト(仮)</p>
+            </div>
+            <div class="menu">
+                <div class="button_parent">
+                    <button id="button1">プレイ画面</button>   
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="screen2" class="screen">
+        <div class="main_2">
+            <p id="screen2_back"></p>
+            <div class="timer_parent">
+                <div id="time">00:40.000</div>
+                <div>
+                    <input id="start" type="button" value="START">
+                    <input id="reset" type="button" value="RESET">
+                </div>
+            </div>
+            <div class="display_parent">
+                <span id="display">Spaceでゲーム開始</span>
+                <br>
+                <div id="romaji_parent">
+                    <span id="fs_display"></span><span id="romaji">(ESCで中断できます)</span>
+                </div>
+            </div>
+            <div id="button2_parent">
+                <button class="button2">結果発表</button>   
+            </div>
+        </div>
+    </div>
+    <div id="screen3" class="screen">
+        <div class="main_3">
+            <div class="score_parent">
+                <div id="result"></div>
+            </div>
+            <div class="button_parent">
+                <button id="button4">もう一度プレイ</button>   
+                <button id="button3">メニューに戻る</button>   
+            </div>
+        </div>
+    </div>
+<p id="output"></p>
+</body>
+</html>
