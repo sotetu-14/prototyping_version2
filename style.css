@@ -44,24 +44,12 @@ button:hover {
 }
 /* スクリーン1 */
 #screen1 {
-    /* overflow: hidden; */
     background-color: #C0EEF2;
-    /* height: 3000px; */
 }
 .main_1 {
     padding: 0 0 0 0;
-    /* margin: 100px 0 0 0; */
 }
 /* タイピングソフト(仮) */
-/* .title_entire{ 
-    background-color: #ffffff;
-    width: 35%;
-    height: 9.375rem;
-    margin: 3.125rem auto 0 auto;
-    border-radius: 1.25rem;
-    border: 0.4375rem solid #181823;
-    display: flex;
-} */
 .title_entire {
     text-align: center;
 }
@@ -80,9 +68,6 @@ button:hover {
 #button1 {
     margin: 9.375rem;
 }
-
-
-
 /* スクリーン2 */
 #screen2 {
     background-color: #C0EEF2;
@@ -114,11 +99,9 @@ button:hover {
     display: block;
     white-space: nowrap;
     overflow: hidden;
-/*     min-width: 70%;
-    max-width: 90%; */
+    width: 90%;
     text-align: center;
     font-size: 400%;
-    /* width: 70%; */
     background-color: white;
     border-radius: 0.9375rem;
     border: 0.3125rem solid #181823;
