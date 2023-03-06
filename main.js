@@ -1,35 +1,111 @@
 const sentence = [
     {kanji:"新しいスーツを買って入社式に備える",
-    hiragana:"あたらしいすーつをかってにゅうしゃしきにそなえる",
     romaji:"atarasiisu-tuwokattenyuusyasikinisonaeru"
     },
     {kanji:"隣の客はよく柿食う客だ",
-    hiragana:"となりのきゃくはよくかきくうきゃくだ",
     romaji:"tonarinokyakuhayokukakikuukyakuda"
     },
     {kanji:"隣の竹垣に竹立て掛けた",
-    hiragana:"となりのたけがきにたけたてかけた",
     romaji:"tonarinotakegakinitaketatekaketa"
     },
     {kanji:"今日歯医者に行く",
-    hiragana:"きょうはいしゃにいく",
     romaji:"kyouhaisyaniiku"
     },
     {kanji:"このドラマは来週も続くようだ",
-    hiragana:"このどらまはらいしゅうもつづくようだ",
     romaji:"konodoramaharaisyuumotudukuyouda"
     },
     {kanji:"文章を校正する",
-    hiragana:"ぶんしょうをこうせいする",
     romaji:"bunsyouwokouseisuru"
     },
-    {kanji:"自転車事故のニュースを聞いた",
-    hiragana:"じてんしゃじこのにゅーすをきいた",
-    romaji:"zitensyazikononyu-suwokiita"
-    },
     {kanji:"おばから入学のお祝いをもらった",
-    hiragana:"おばからにゅうがくのおいわいをもらった",
     romaji:"obakaranyuugakunooiwaiwomoratta"
+    },
+    {kanji:"キャベツの千切り",
+    romaji:"kyabetunosengiri"
+    },
+    {kanji:"少年よ大志を抱け",
+    romaji:"syounenyotaisiwoidake"
+    },
+    {kanji:"一番好きな食べ物は寿司です",
+    romaji:"itibansukinatabemonohasusidesu"
+    },
+    {kanji:"オンラインショッピングを利用する",
+    romaji:"onrainsyoppinguworiyousuru"
+    },
+    {kanji:"僕と彼は感動的な再会をしました",
+    romaji:"bokutokarehakandoutekinasaikaiwosimasita"
+    },
+    {kanji:"無人島に漂着してからもう二週間",
+    romaji:"muzintounihyoutyakusitekaramounisyuukan"
+    },
+    {kanji:"言われたとおりにやったのに",
+    romaji:"iwaretatooriniyattanoni"
+    },
+    {kanji:"残念なお知らせがあります",
+    romaji:"zannnennnaosirasegaarimasu"
+    },
+    {kanji:"使い捨てコンタクトレンズを使いまわす",
+    romaji:"tukaisutekontakutorenzuwotukaimawasu"
+    },
+    {kanji:"私が大食いチャンピオンです",
+    romaji:"watasigaooguityanpiondesu"
+    },
+    {kanji:"生まれ変わったら鳥になりたい",
+    romaji:"umarekawattaratorininaritai"
+    },
+    {kanji:"地球は青かった",
+    romaji:"tikyuuhaaokatta"
+    },
+    {kanji:"私はあなたの前にいる",
+    romaji:"watasihaanatanomaeniiru"
+    },
+    {kanji:"今日は天気がいいですね",
+    romaji:"kyouhatenkigaiidesune"
+    },
+    {kanji:"美しい夕日を見た",
+    romaji:"utukusiiyuuhiwomita"
+    },
+    {kanji:"私の猫は大きいです",
+    romaji:"watasinonekohaookiidesu"
+    },
+    {kanji:"美味しい料理を食べたいです",
+    romaji:"oisiiryouriwotabetaidesu"
+    },
+    {kanji:"私はお茶を飲むのが好きです",
+    romaji:"watasihaotyawonomunogasukidesu"
+    },
+    {kanji:"あなたの目はとてもきれいです",
+    romaji:"anatanomehatotemokireidesu"
+    },
+    {kanji:"彼はとても頭がいいです",
+    romaji:"karehatotemoatamagaiidesu"
+    },
+    {kanji:"美味しいコーヒーが飲みたいです",
+    romaji:"oisiiko-hi-ganomitaidesu"
+    },
+    {kanji:"私は本を読むのが好きです",
+    romaji:"watasihahonwoyomunogasukidesu"
+    },
+    {kanji:"日本の伝統文化に興味があります",
+    romaji:"nihonnnodentoubunkanikyoumigaarimasu"
+    },
+    {kanji:"私たちは一緒に買い物に行きました",
+    romaji:"watasihaissyonikaimononiikimasita"
+    },
+    {kanji:"お腹が空いたので何か食べたいです",
+    romaji:"onakagasuitanodenanikatabetaidesu"
+    },
+    {kanji:"バカと天才は紙一重",
+    romaji:"bakatotensaihakamihitoe"
+    },
+    {kanji:"良い香りのする花が好きです",
+    romaji:"iikaorinosuruhanagasukidesu"
+    },
+    {kanji:"私たちは山に登りました",
+    romaji:"watasitatihayamaninoborimasita"
+    },
+    {kanji:"私はアクション映画を見るのが好きです",
+    romaji:"watasihaakusyoneigawomirunogasukidesu"
     }
 ];
 
@@ -202,7 +278,7 @@ const gameEnd = () => {
     accuracy = (correct_Type / total_Type) * 100; // 正確さ
     speed = (total_Type / (limit/1000)) * 60; // 速度
     // 総合スコアの計算式(ゲームのアルゴリズム)
-    score = Math.floor(((accuracy*2) + speed) / 2); // 総合点
+    score = Math.floor(((accuracy*3) + speed)); // 総合点
     // もしタイプが0ならスコアを0にする
     if(total_Type === 0) {
         score = 0;
@@ -210,36 +286,63 @@ const gameEnd = () => {
     // ランクの識別
     let rank;
     switch(true) {
-        case(score >= 300):
-        rank = "A+"
-        break;
-        case(score >= 270):
-        rank = "A"
-        break
-        case(score >= 230):
-        rank = "B+"
-        break
-        case(score >= 200):
+        case(score >= 850):
+            rank = "A+"
+            break;
+        case(score >= 800):
+            rank = "A"
+            break;
+        case(score >= 760):
+            rank = "A-"
+            break;
+        case(score >= 730):
+            rank = "B+"
+            break;
+        case(score >= 660):
             rank = "B"
+            break;
+        case(score >= 600):
+            rank = "B-"
+            break;
+        case(score >= 540):
+            rank = "C+"
             break
-        case(score >= 170):
+        case(score >= 480):
             rank = "C"
             break
-        case(score >= 130):
+        case(score >= 420):
+            rank = "C-"
+            break
+        case(score >= 370):
+            rank = "D+"
+            break
+        case(score >= 320):
             rank = "D"
             break
-        case(score >= 100):
+        case(score >= 280):
+            rank = "D-"
+            break
+        case(score >= 260):
+            rank = "E+"
+            break
+        case(score >= 240):
             rank = "E"
             break
-        case(score >= 80):
+        case(score >= 190):
+            rank = "E-"
+            break
+        case(score >= 170):
+            rank = "F+"
+            break;
+        case(score >= 150):
             rank = "F"
-            break
-        case(score >= 50):
+            break;
+        case(score >= 120):
+            rank = "G+"
+            break;
+        case(score < 100):
             rank = "G"
-            break
-        case(score < 50):
-            rank = "G-"
-            break
+            break;
     }
     // スコア＆ランクの書き込み
     result = document.getElementById('result');    
