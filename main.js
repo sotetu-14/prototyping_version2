@@ -90,7 +90,7 @@ const sentence = [
     romaji:"nihonnnodentoubunkanikyoumigaarimasu"
     },
     {kanji:"私たちは一緒に買い物に行きました",
-    romaji:"watasihaissyonikaimononiikimasita"
+    romaji:"watasitatihaissyonikaimononiikimasita"
     },
     {kanji:"お腹が空いたので何か食べたいです",
     romaji:"onakagasuitanodenanikatabetaidesu"
