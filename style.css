@@ -111,38 +111,23 @@ button:hover {
 
 /* 文字を表示させる部分 */
 .display_parent {
-    text-align: center;
-    margin: 5% 0 0 0;
-}
-
-.display_parent {
-    display: inline-block;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 70%;
+    max-width: 90%;
     text-align: center;
     font-size: 400%;
-    width: 70%;
+    /* width: 70%; */
     background-color: white;
     border-radius: 0.9375rem;
     border: 0.3125rem solid #181823;
     padding: 0.47rem 0 0.1875rem 0;
     color: #181823;
     font-weight: bold;
-}
-/* 文字入力欄 */
-.input_parent {
+    /* 位置調整 */
     text-align: center;
-}
-#input_room {
-    display: inline-block;
-    background-color: white;
-    padding: 0.625rem 5rem;
-    margin: 6.25rem 0 0 0;
-    font-size: 400%;
-    text-align: center;
-    border: 0.375rem solid #eb455f;
-    color: #eb455f;
-    border-radius: 3.125rem;
-    font-weight: bold;
-    width: 60%;
+    margin: 5% auto 0 auto;
 }
 #button2_parent {
     /* 中央揃え */
@@ -154,7 +139,7 @@ button:hover {
     margin: 0 auto;
     position: absolute;
     margin: 0 auto;
-    top: 36rem;
+    top: 35rem;
     width: fit-content;
 }
 /* 警告文の表示 */
@@ -194,7 +179,8 @@ button:hover {
     justify-content: center;
     position: relative;
     background-color: white;
-    width: 74rem;
+    min-width: 74rem;
+    max-width: 80rem;
     margin: 1% auto 0 auto;
     padding: 1rem;
     border-radius: 0.9375rem;
