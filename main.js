@@ -161,7 +161,7 @@ const updatetime = () => {
     const reset = document.getElementById('reset');
     
     // 制限時間の設定
-    const limit = 400;
+    const limit = 40000;
     let remaining = limit;
     // タイマー開始停止の挙動調整
     let intervalId = null;
