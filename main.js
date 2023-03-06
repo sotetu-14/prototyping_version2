@@ -61,18 +61,18 @@ const result_on = () => {
     b2.classList.add("b2_special");
     b2.style.color = "#181823";
     b2.style.backgroundColor = "white";
-    b2.style.border = "0.3vwvw solid #181823"
+    b2.style.border = "0.3vw solid #181823"
     
     b2.addEventListener('mouseover', () => {
         b2.style.color = '#eb455f';
         b2.style.backgroundColor = 'white';
-        b2.style.border = '0.3vwvw solid #eb455f';
+        b2.style.border = '0.3vw solid #eb455f';
     });
       
       b2.addEventListener('mouseout', () => {
         b2.style.color = '#181823';
         b2.style.backgroundColor = 'white';
-        b2.style.border = '0.3vwvw solid #181823';
+        b2.style.border = '0.3vw solid #181823';
     });
 
 }
@@ -84,7 +84,7 @@ const result_off = () => {
     // ボタンの色変更
     b2.style.color = "#8a8a8a";
     b2.style.backgroundColor = "#ededed";
-    b2.style.border = "0.3vwvw solid #8a8a8a"    
+    b2.style.border = "0.3vw solid #8a8a8a"    
 }
 
 // 初期設定
