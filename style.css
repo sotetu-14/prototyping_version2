@@ -20,7 +20,7 @@ button {
     display: inline-block;
     background-color: white;
     color: #181823;
-    font-size: 300%;
+    font-size: 2.35vw;
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.5rem;
@@ -58,7 +58,7 @@ button:hover {
     margin: auto;
     color: #eb455f;
     font-weight: 900;
-    font-size: 370%;
+    font-size: 3vw;
     background-color: white;
     padding: 1.5rem 2rem;
     border-radius: 1.25rem;
@@ -80,7 +80,7 @@ button:hover {
 }
 #time {
     font-family: DSEG;
-    font-size: 5rem;
+    font-size: 4.2vw;
     color: #181823;
     background-color: white;
     display: inline-block;
@@ -89,9 +89,8 @@ button:hover {
     margin: 0 0 0 0;
 }
 #start, #stop, #reset {
-    background-color: white;
-    font-size: 3rem;
     display: none;
+    color: #C0EEF2;
 }
 
 /* 文字を表示させる部分 */
@@ -101,7 +100,7 @@ button:hover {
     overflow: hidden;
     width: 90%;
     text-align: center;
-    font-size: 400%;
+    font-size: 3.3vw;
     background-color: white;
     border-radius: 0.9375rem;
     border: 0.3125rem solid #181823;
@@ -122,30 +121,13 @@ button:hover {
     margin: 0 auto;
     position: absolute;
     margin: 0 auto;
-    top: 35rem;
+    top: 32vw;
     width: fit-content;
-}
-/* 警告文の表示 */
-.warn_parent {
-    text-align: center;
-}
-.warn {
-    margin: 0.625rem 0 6.25rem 0;
-    font-size: 150%;
-    text-decoration: underline;
-}
-/* スクリーン2の背景について */
-#screen2_back {
-    top: 0.625rem;
-    left: 0.625rem;
-    font-size: 400%;
-    color: #eb455f;
 }
 .main_2 {
     text-align: center;
     margin: 0 auto;
 }
-
 /* スクリーン3 */
 #screen3 {
     background-color: #C0EEF2;
@@ -162,8 +144,7 @@ button:hover {
     justify-content: center;
     position: relative;
     background-color: white;
-    min-width: 74rem;
-    max-width: 80rem;
+    width: 56.31vw;
     margin: 1% auto 0 auto;
     padding: 1rem;
     border-radius: 0.9375rem;
@@ -171,12 +152,12 @@ button:hover {
 }
 #result {
     color: #181823;
-    font-size: 3rem;
+    font-size: 2.2vw;
     letter-spacing: -0.08em;
 }
 #score {
     color: #eb455f;
-    font-size: 7rem;
+    font-size: 6vw;
     font-weight: bold;
     line-height: 100%;
 }
@@ -191,9 +172,9 @@ button:hover {
 }
 #romaji {
     display: inline;
-    font-size: 75%;
+    font-size: 2.5vw;
 }
 #fs_display {
     display: inline;
-    font-size: 85%;
+    font-size: 2.8vw;
 }
