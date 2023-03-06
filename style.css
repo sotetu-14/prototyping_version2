@@ -26,20 +26,20 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     margin: 3.4375rem;
-    border: 0.35rem solid #181823;
+    border: 0.3vw solid #181823;
     font-weight: bold;
     transition: 0.25s;
 }
 button:hover {
     background-color: white;
     transition: 0.25s;
-    border: 0.35rem solid #eb455f;
+    border: 0.3vw solid #eb455f;
     color: #eb455f;
 }
 .b2_special:hover {
     background-color: white;
     transition: 0.25s;
-    border: 0.35rem solid #eb455f;
+    border: 0.3vw solid #eb455f;
     color: #eb455f;
 }
 /* スクリーン1 */
@@ -58,11 +58,11 @@ button:hover {
     margin: auto;
     color: #eb455f;
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 4vw;
     background-color: white;
     padding: 1.5rem 2rem;
     border-radius: 1.25rem;
-    border: 0.4375rem solid #eb455f;
+    border: 0.4vw solid #eb455f;
 }
 /* ボタン1 */
 #button1 {
@@ -85,7 +85,7 @@ button:hover {
     background-color: white;
     display: inline-block;
     padding: 1rem;
-    border: 0.3125rem solid #181823;
+    border: 0.3vw solid #181823;
     margin: 0 0 0 0;
 }
 #start, #stop, #reset {
@@ -103,7 +103,7 @@ button:hover {
     font-size: 3.3vw;
     background-color: white;
     border-radius: 0.9375rem;
-    border: 0.3125rem solid #181823;
+    border: 0.3vw solid #181823;
     padding: 0.47rem 0 0.1875rem 0;
     color: #181823;
     font-weight: bold;
@@ -144,11 +144,11 @@ button:hover {
     justify-content: center;
     position: relative;
     background-color: white;
-    width: 56.31vw;
+    width: 62vw;
     margin: 1% auto 0 auto;
     padding: 1rem;
     border-radius: 0.9375rem;
-    border: 0.4125rem solid #181823;
+    border: 0.4vw solid #181823;
 }
 #result {
     color: #181823;
