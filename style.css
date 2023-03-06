@@ -26,20 +26,20 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     margin: 3.4375rem;
-    border: 0.2vw solid #181823;
+    border: 0.3vw solid #181823;
     font-weight: bold;
     transition: 0.25s;
 }
 button:hover {
     background-color: white;
     transition: 0.25s;
-    border: 0.2vw solid #eb455f;
+    border: 0.3vw solid #eb455f;
     color: #eb455f;
 }
 .b2_special:hover {
     background-color: white;
     transition: 0.25s;
-    border: 0.2vw solid #eb455f;
+    border: 0.3vw solid #eb455f;
     color: #eb455f;
 }
 /* スクリーン1 */
