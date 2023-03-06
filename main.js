@@ -61,18 +61,18 @@ const result_on = () => {
     b2.classList.add("b2_special");
     b2.style.color = "#181823";
     b2.style.backgroundColor = "white";
-    b2.style.border = "0.35rem solid #181823"
+    b2.style.border = "0.3vw solid #181823"
     
     b2.addEventListener('mouseover', () => {
         b2.style.color = '#eb455f';
         b2.style.backgroundColor = 'white';
-        b2.style.border = '0.35rem solid #eb455f';
+        b2.style.border = '0.3vw solid #eb455f';
     });
       
       b2.addEventListener('mouseout', () => {
         b2.style.color = '#181823';
         b2.style.backgroundColor = 'white';
-        b2.style.border = '0.35rem solid #181823';
+        b2.style.border = '0.3vw solid #181823';
     });
 
 }
@@ -84,7 +84,7 @@ const result_off = () => {
     // ボタンの色変更
     b2.style.color = "#8a8a8a";
     b2.style.backgroundColor = "#ededed";
-    b2.style.border = "0.35rem solid #8a8a8a"    
+    b2.style.border = "0.3vw solid #8a8a8a"    
 }
 
 // 初期設定
@@ -161,7 +161,7 @@ const updatetime = () => {
     const reset = document.getElementById('reset');
     
     // 制限時間の設定
-    const limit = 40000;
+    const limit = 400;
     let remaining = limit;
     // タイマー開始停止の挙動調整
     let intervalId = null;
@@ -260,7 +260,7 @@ const gameStart = () => {
     // ボタンの色変更
     b2.style.color = "#8a8a8a";
     b2.style.backgroundColor = "#ededed";
-    b2.style.border = "0.35rem solid #8a8a8a"
+    b2.style.border = "0.3vw solid #8a8a8a"
     // タイマーの開始
     let pre = new Date();
     intervalId = setInterval(function() {
@@ -287,7 +287,7 @@ const gameStart = () => {
 
     // ディスプレイの枠線の色を変更
     const display_parent = document.querySelector('.display_parent')
-    display_parent.style.border = "0.4125rem solid #eb455f";
+    display_parent.style.border = "0.4vw solid #eb455f";
     // タイム表示の色を変更
     const time = document.getElementById('time')
     time.style.color = "#eb455f"
@@ -312,7 +312,7 @@ const reset_time = () => {
     romaji.textContent = "(ESCで中断できます)"
     // ディスプレイの枠線の色を変更
     const display_parent = document.querySelector('.display_parent')
-    display_parent.style.border = "0.3125rem solid #181823";
+    display_parent.style.border = "0.3vw solid #181823";
     // タイム表示の色を変更
     const time = document.getElementById('time')
     time.style.color = "#181823"
@@ -350,6 +350,6 @@ b2.disabled = true;
 // ボタンの色変更
 b2.style.color = "#8a8a8a";
 b2.style.backgroundColor = "#ededed";
-b2.style.border = "0.35rem solid #8a8a8a"
+b2.style.border = "0.3vw solid #8a8a8a"
 
 });
